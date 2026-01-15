@@ -1,0 +1,70 @@
+═══════════════════════════════════════════════════════════════
+  COPY AND PASTE THESE EXACT COMMANDS (ONE AT A TIME)
+═══════════════════════════════════════════════════════════════
+
+IMPORTANT: Use RELATIVE paths, NOT absolute paths!
+
+═══════════════════════════════════════════════════════════════
+COMMAND 1: Check where you are
+═══════════════════════════════════════════════════════════════
+
+Type this:
+  pwd
+
+You should see: /Users/adarshpal/payment_app:  
+
+═══════════════════════════════════════════════════════════════
+COMMAND 2: See the frontend folder
+═══════════════════════════════════════════════════════════════
+
+Type this:
+  ls
+
+You should see "frontend" in the list.
+
+═══════════════════════════════════════════════════════════════
+COMMAND 3: Go to frontend folder (USE RELATIVE PATH!)
+═══════════════════════════════════════════════════════════════
+
+Type this (NOT the absolute path!):
+  cd frontend
+
+NOT this: cd /Users/adarshpal/payment_app/frontend ❌
+
+═══════════════════════════════════════════════════════════════
+COMMAND 4: Verify you're in frontend folder
+═══════════════════════════════════════════════════════════════
+
+Type this:
+  pwd
+
+Should show: /Users/adarshpal/payment_app:  /frontend
+
+Type this:
+  ls
+
+Should see: package.json, src/, node_modules/, etc.
+
+═══════════════════════════════════════════════════════════════
+COMMAND 5: Install dependencies
+═══════════════════════════════════════════════════════════════
+
+Type this:
+  npm install
+
+Wait 1-2 minutes. You'll see "added X packages"
+
+═══════════════════════════════════════════════════════════════
+COMMAND 6: Start the server
+═══════════════════════════════════════════════════════════════
+
+Type this:
+  npm run dev
+
+You should see:
+  VITE v7.x.x  ready in xxx ms
+  ➜  Local:   http://localhost:5173/
+
+═══════════════════════════════════════════════════════════════
+THEN: Open browser to http://localhost:5173
+═══════════════════════════════════════════════════════════════

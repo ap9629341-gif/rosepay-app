@@ -1,0 +1,48 @@
+═══════════════════════════════════════════════════════════════
+  COPY AND PASTE THESE EXACT COMMANDS
+═══════════════════════════════════════════════════════════════
+
+You're in the ROOT directory, but you need to be in FRONTEND!
+
+═══════════════════════════════════════════════════════════════
+COMMAND 1: Go to frontend folder
+═══════════════════════════════════════════════════════════════
+
+Type this:
+  cd frontend
+
+═══════════════════════════════════════════════════════════════
+COMMAND 2: Verify you're in the right place
+═══════════════════════════════════════════════════════════════
+
+Type this:
+  pwd
+
+Should show: /Users/adarshpal/payment_app:  /frontend
+
+Type this:
+  ls
+
+Should see: package.json (this is what npm needs!)
+
+═══════════════════════════════════════════════════════════════
+COMMAND 3: Start the server
+═══════════════════════════════════════════════════════════════
+
+Type this:
+  npm run dev
+
+You should see:
+  VITE v7.x.x  ready in xxx ms
+  ➜  Local:   http://localhost:5173/
+
+═══════════════════════════════════════════════════════════════
+OR DO IT ALL AT ONCE:
+═══════════════════════════════════════════════════════════════
+
+Type this (from root directory):
+  cd frontend && npm run dev
+
+This does both steps in one command!
+
+═══════════════════════════════════════════════════════════════
