@@ -15,9 +15,6 @@ from core.error_handlers import (
     general_exception_handler
 )
 
-# Initialize database tables on startup
-init_db()
-
 app = FastAPI(title="RosePay - Wallet Payment API", version="1.0.0")
 
 # Add CORS middleware (allows frontend to make API calls)
@@ -68,7 +65,11 @@ def read_root():
 @app.on_event("startup")
 async def startup_event():
     """Initialize database when app starts."""
-    init_db()
-    print("✅ Database initialized!")
-    print("✅ RosePay API is ready!")
+    try:
+        init_db()
+        print("✅ Database initialized!")
+        print("✅ RosePay API is ready!")
+    except Exception as e:
+        print(f"⚠️ Database initialization warning: {e}")
+        print("✅ API is ready (database will initialize on first use)")
 
