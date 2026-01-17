@@ -21,7 +21,7 @@ app = FastAPI(title="RosePay - Wallet Payment API", version="1.0.0")
 import os
 
 # Get CORS origins from environment or use defaults
-cors_origins_str = os.getenv("CORS_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173")
+cors_origins_str = os.getenv("CORS_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173,https://frontend-livid-eight-59.vercel.app")
 cors_origins = [origin.strip() for origin in cors_origins_str.split(",")]
 
 app.add_middleware(
